@@ -1,0 +1,6 @@
+name: Commands
+
+on: [push]
+
+jobs:
+    
