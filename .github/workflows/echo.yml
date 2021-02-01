@@ -1,0 +1,24 @@
+name: Commands
+
+on: 
+  pull_request:
+    types: [opened]
+
+jobs:
+  run-shell-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 
+        uses: actions/checkout@v1
+      - name: List Files After Checkout
+        run: |
+          pwd
+          ls -a
+      - name: echo a string
+        run: | 
+          echo "GITHUB_REF $GITHUB_REF"
+          echo "GITHUB_SHA $GITHUB_SHA"
+      - name: multiline script
+        run: |
+          node -v
+          npm -v
