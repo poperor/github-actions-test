@@ -1,4 +1,4 @@
-name: Try pull request
+name: Periodic run
 
 on:
   schedule:
