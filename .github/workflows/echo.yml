@@ -1,8 +1,7 @@
 name: Periodic run
 
 on:
-  schedule:
-    - cron: "0/5 * * * *"
+  push:
 
 jobs:
   run-shell-commands:
