@@ -1,8 +1,8 @@
-name: Commands
+name: Try pull request
 
-on: 
-  pull_request:
-    types: [opened]
+on:
+  schedule:
+  - cron: "0/5 * * * *"
 
 jobs:
   run-shell-commands:
