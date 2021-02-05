@@ -1,7 +1,9 @@
-name: Periodic run
+name: Filtered steps
 
 on:
   push:
+    branches:
+      - master
 
 jobs:
   run-shell-commands:
